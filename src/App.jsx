@@ -9,6 +9,7 @@ function App() {
       <Section1_Hook />
       <Section2_Facts />
       <Section3_Space />
+      <div className="spacer" style={{ height: '50vh', background: '#000' }}></div>
     </main>
   );
 }

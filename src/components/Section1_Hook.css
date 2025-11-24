@@ -4,6 +4,7 @@
   height: 100vh;
   overflow: hidden;
   background-color: #0a0a0f;
+  z-index: 10;
 }
 
 .background-map {
