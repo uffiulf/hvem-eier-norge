@@ -4,6 +4,20 @@
   min-height: 100vh;
   overflow: hidden;
   background: linear-gradient(135deg, #1a202c 0%, #2d3748 100%);
+  z-index: 30;
+  margin-top: -1px;
+}
+
+@keyframes pulse-marker {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.9;
+  }
+  50% {
+    transform: scale(1.5);
+    opacity: 0.5;
+  }
 }
 
 .map-wrapper {
@@ -35,6 +49,15 @@
 .marker {
   cursor: pointer;
   filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.4));
+}
+
+.marker circle:first-child {
+  animation: pulse-marker 2s ease-in-out infinite;
+  transform-origin: center;
+}
+
+.national-marker circle:first-child {
+  animation-delay: 1s;
 }
 
 .trysil-marker {

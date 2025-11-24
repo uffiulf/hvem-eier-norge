@@ -1,0 +1,176 @@
+.section-comparative {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%);
+  z-index: 40;
+  margin-top: -1px;
+}
+
+.comparative-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.headline {
+  font-size: clamp(2.5rem, 8vw, 6rem);
+  font-weight: 900;
+  letter-spacing: 0.05em;
+  color: #0a0a0f;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  line-height: 1.1;
+}
+
+.intro-text {
+  font-size: clamp(1.25rem, 3vw, 2rem);
+  font-weight: 600;
+  color: #4a5568;
+  text-align: center;
+  margin-bottom: 4rem;
+  opacity: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.country-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border: 3px solid transparent;
+  position: relative;
+  overflow: hidden;
+}
+
+.country-card.norge {
+  background: linear-gradient(135deg, #48bb78 0%, #38a169 100%);
+  color: #ffffff;
+  border-color: #2f855a;
+  box-shadow: 0 8px 30px rgba(72, 187, 120, 0.3);
+}
+
+.country-card:not(.norge) {
+  background: #ffffff;
+  color: #2d3748;
+  border-color: #e2e8f0;
+}
+
+.country-card:not(.norge).status-restrictive {
+  border-color: #fc8181;
+  background: linear-gradient(135deg, #ffffff 0%, #fed7d7 100%);
+}
+
+.country-card:not(.norge).status-closed {
+  border-color: #e53e3e;
+  background: linear-gradient(135deg, #ffffff 0%, #feb2b2 100%);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+}
+
+.country-name {
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  font-weight: 800;
+  line-height: 1.2;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+}
+
+.status-badge {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.status-badge.status-open {
+  background: rgba(255, 255, 255, 0.3);
+  color: #ffffff;
+}
+
+.status-badge.status-restrictive {
+  background: #fed7d7;
+  color: #c53030;
+}
+
+.status-badge.status-closed {
+  background: #feb2b2;
+  color: #9b2c2c;
+}
+
+.status-icon {
+  font-size: 1.25rem;
+}
+
+.status-text {
+  font-size: 0.75rem;
+}
+
+.card-rule {
+  font-size: clamp(0.9rem, 2vw, 1.1rem);
+  line-height: 1.6;
+  color: inherit;
+  opacity: 0.9;
+}
+
+.country-card.norge .card-rule {
+  color: rgba(255, 255, 255, 0.95);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .comparative-container {
+    padding: 1rem;
+  }
+
+  .headline {
+    margin-bottom: 2rem;
+    font-size: clamp(2rem, 10vw, 3rem);
+  }
+
+  .intro-text {
+    margin-bottom: 2rem;
+    font-size: clamp(1rem, 5vw, 1.5rem);
+  }
+
+  .cards-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .country-card {
+    padding: 1.5rem;
+  }
+}
+
