@@ -145,11 +145,54 @@ const Section8_Conclusion = () => {
             <p>En scrollytelling-produksjon basert på åpne kilder.</p>
           </div>
           <div className="footer-sources">
-            <p className="footer-label">Kilder:</p>
-            <p>
-              Statistisk sentralbyrå (SSB), Kartverket, EU Tax Observatory, Transparency
-              International Norge, Prognosesenteret, Norges Bank.
-            </p>
+            <p className="footer-label">Kilder og metode:</p>
+            <ul className="sources-list">
+              <li>
+                <a
+                  href="https://www.taxobservatory.eu/www-site/uploads/2022/12/EU-Tax-Observatory_WP8_ForeignOwners-NorwegianRealEstate_December2022.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  EU Tax Observatory: Foreign Ownership of Norwegian Real Estate (2022)
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.ssb.no/bygg-bolig-og-eiendom/artikler-og-publikasjoner/nesten-alle-hytter-pa-norske-hender"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  SSB: Nesten alle hytter på norske hender (2017)
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.transparency.no/publikasjonerverkty/beneficial-ownership-transparency-in-norway-real-estate-as-a-safe-haven-for-money-laundering"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Transparency International: Who Owns Oslo? (2021)
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.tv2.no/nyheter/innenriks/rekordmange-utlendinger-kjoper-i-norge/17591801/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  TV2: Rekordmange utlendinger kjøper i Norge (2025)
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.regjeringen.no/no/aktuelt/kartlegging-eierskapsopplysninger/id3023024/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Regjeringen/Kartverket: Kartlegging av eierskap (2024)
+                </a>
+              </li>
+            </ul>
           </div>
           <div className="footer-disclaimer">
             <p className="footer-label">Fotnote:</p>
