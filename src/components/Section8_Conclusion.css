@@ -118,40 +118,55 @@
 .footer-content {
   max-width: 1200px;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
+  flex-direction: column;
   gap: 2rem;
-  text-align: center;
+  text-align: left;
 }
 
-.footer-production p,
+.footer-credit p,
 .footer-sources p,
-.footer-technology p {
+.footer-disclaimer p {
   font-size: clamp(0.875rem, 1.5vw, 1rem);
   color: #94a3b8;
-  line-height: 1.6;
+  line-height: 1.7;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
     'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
 }
 
 .footer-label {
-  font-weight: 600;
+  font-weight: 700;
   color: #cbd5e1 !important;
-  margin-bottom: 0.5rem !important;
+  margin-bottom: 0.75rem !important;
+  font-size: clamp(0.95rem, 1.6vw, 1.1rem) !important;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
-.footer-production p {
+.footer-credit p {
   font-weight: 500;
   color: #e2e8f0;
+  font-style: italic;
+  margin-bottom: 0.5rem;
+}
+
+.footer-sources {
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-disclaimer {
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: clamp(0.8rem, 1.4vw, 0.95rem);
 }
 
 /* Responsive adjustments */
 @media (max-width: 1024px) {
   .footer-content {
-    grid-template-columns: 1fr;
     gap: 1.5rem;
-    text-align: center;
+    text-align: left;
   }
 
   .conclusion-content {
@@ -206,6 +221,12 @@
 
   .footer-content {
     gap: 1.25rem;
+    text-align: left;
+  }
+
+  .footer-sources,
+  .footer-disclaimer {
+    padding-top: 0.75rem;
   }
 }
 

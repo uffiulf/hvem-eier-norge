@@ -141,16 +141,22 @@ const Section8_Conclusion = () => {
 
       <footer className="conclusion-footer">
         <div className="footer-content">
-          <div className="footer-production">
-            <p>En produksjon av Det Åpne Landet</p>
+          <div className="footer-credit">
+            <p>En scrollytelling-produksjon basert på åpne kilder.</p>
           </div>
           <div className="footer-sources">
             <p className="footer-label">Kilder:</p>
-            <p>Kartverket, SSB, EU Tax Observatory, Transparency International</p>
+            <p>
+              Statistisk sentralbyrå (SSB), Kartverket, EU Tax Observatory, Transparency
+              International Norge, Prognosesenteret, Norges Bank.
+            </p>
           </div>
-          <div className="footer-technology">
-            <p className="footer-label">Teknologi:</p>
-            <p>React, GSAP, Vite</p>
+          <div className="footer-disclaimer">
+            <p className="footer-label">Fotnote:</p>
+            <p>
+              Tall for boligeierskap er basert på EU Tax Observatorys rapport fra 2022. Tall for
+              hyttemarkedet er hentet fra Prognosesenteret (2025).
+            </p>
           </div>
         </div>
       </footer>
