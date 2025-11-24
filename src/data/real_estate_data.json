@@ -1,0 +1,45 @@
+{
+  "residential": {
+    "ownership_percent": 0.6,
+    "source": "EU Tax Observatory (Working Paper No. 8, 2022)",
+    "context": "Estimat for utenlandsk eierskap av norske boliger."
+  },
+  "vacation_homes": {
+    "national_foreign_ownership_2024": 6.9,
+    "national_foreign_share_sales_2025": 5.0,
+    "trysil_foreign_share_sales": 26.0,
+    "source_ownership": "SSB (via research doc)",
+    "source_sales": "Prognosesenteret / TV2 (via research doc)"
+  },
+  "commercial": {
+    "transaction_volume_foreign_share_2023": 23.0,
+    "source": "Akershus Eiendom (via research doc)"
+  },
+  "comparison_countries": [
+    {
+      "country": "Norge",
+      "rule": "Ingen restriksjoner",
+      "status": "Åpent"
+    },
+    {
+      "country": "Danmark",
+      "rule": "Krav om 5 års bosetning (Civilstyrelsen)",
+      "status": "Restriktivt"
+    },
+    {
+      "country": "Sveits",
+      "rule": "Lex Koller: Kvote-system og begrensninger",
+      "status": "Veldig restriktivt"
+    },
+    {
+      "country": "New Zealand",
+      "rule": "Forbud mot utenlandske boligkjøpere (2018)",
+      "status": "Stengt"
+    }
+  ],
+  "transparency_issues": {
+    "main_problem": "Frivillig tinglysning",
+    "consequence": "46% av selskapseide eiendommer i Oslo har ukjente reelle eiere (Transparency Int.)"
+  }
+}
+
