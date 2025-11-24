@@ -1,0 +1,211 @@
+.section-conclusion {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  background: #0a0a0f;
+  z-index: 80;
+  margin-top: -1px;
+}
+
+.conclusion-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.background-image-placeholder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 120%; /* Extra height for parallax effect */
+  will-change: transform;
+}
+
+.background-svg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.background-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(10, 10, 15, 0.3) 0%,
+    rgba(10, 10, 15, 0.5) 50%,
+    rgba(10, 10, 15, 0.8) 100%
+  );
+  z-index: 2;
+}
+
+.conclusion-content {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+  padding: 2rem;
+}
+
+.narrative-overlay {
+  max-width: 900px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.narrative-text-1,
+.narrative-text-2 {
+  font-size: clamp(1.125rem, 2.5vw, 1.5rem);
+  line-height: 1.8;
+  color: #e2e8f0;
+  margin-bottom: 2rem;
+  font-weight: 400;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
+    'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  text-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
+}
+
+.narrative-text-2 {
+  margin-bottom: 3rem;
+}
+
+.conclusion-headline {
+  font-size: clamp(3rem, 8vw, 6rem);
+  font-weight: 900;
+  color: #ffffff;
+  margin-bottom: 2rem;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
+    'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  text-shadow: 0 4px 30px rgba(0, 0, 0, 0.7), 0 0 40px rgba(255, 255, 255, 0.1);
+}
+
+.conclusion-subtext {
+  font-size: clamp(1.25rem, 3vw, 1.75rem);
+  line-height: 1.7;
+  color: #cbd5e1;
+  font-weight: 300;
+  font-style: italic;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
+    'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  text-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.conclusion-footer {
+  position: relative;
+  width: 100%;
+  background: #0a0a0f;
+  padding: 3rem 2rem;
+  z-index: 4;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+  text-align: center;
+}
+
+.footer-production p,
+.footer-sources p,
+.footer-technology p {
+  font-size: clamp(0.875rem, 1.5vw, 1rem);
+  color: #94a3b8;
+  line-height: 1.6;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
+    'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+}
+
+.footer-label {
+  font-weight: 600;
+  color: #cbd5e1 !important;
+  margin-bottom: 0.5rem !important;
+}
+
+.footer-production p {
+  font-weight: 500;
+  color: #e2e8f0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    text-align: center;
+  }
+
+  .conclusion-content {
+    padding: 1.5rem;
+  }
+
+  .narrative-text-1,
+  .narrative-text-2 {
+    margin-bottom: 1.5rem;
+  }
+
+  .narrative-text-2 {
+    margin-bottom: 2rem;
+  }
+
+  .conclusion-headline {
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .conclusion-content {
+    padding: 1rem;
+  }
+
+  .narrative-overlay {
+    max-width: 100%;
+  }
+
+  .narrative-text-1,
+  .narrative-text-2 {
+    font-size: clamp(1rem, 4vw, 1.25rem);
+    margin-bottom: 1.25rem;
+  }
+
+  .narrative-text-2 {
+    margin-bottom: 1.75rem;
+  }
+
+  .conclusion-headline {
+    font-size: clamp(2rem, 10vw, 4rem);
+    margin-bottom: 1.25rem;
+  }
+
+  .conclusion-subtext {
+    font-size: clamp(1rem, 4vw, 1.25rem);
+  }
+
+  .conclusion-footer {
+    padding: 2rem 1.5rem;
+  }
+
+  .footer-content {
+    gap: 1.25rem;
+  }
+}
+
